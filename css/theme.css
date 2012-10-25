@@ -67,6 +67,15 @@ a:hover {
 figure {
   margin-bottom: 24px; }
 
+#gray {
+  color: gray;
+}
+
+#contactlinks:hover {
+  color: #6bc7e1;
+  text-decoration: none;
+}
+
 /* PAGE SECTIONS */
 /* ------------- */
 .section {

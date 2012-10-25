@@ -51,13 +51,13 @@
                     <div class="above_container">
                     <p id="hellobar">
                         <a href="tel:18776558227">
-                            <font color= white>
+                            <font color= white id="contactlinks">
                                 <i class="icon-phone"></i> 877.655.8227     
                             </font>
                         </a>
                                   |  
                         <a href="mailto:info@perfectsearchdesign.com">
-                            <font color=white>
+                            <font color=white id="contactlinks">
                                 <i class="icon-envelope"></i>   info@perfectsearchdesign.com  
                             </font>
                         </a>
@@ -162,20 +162,38 @@
                         <form class="form-horizontal" action="https://www.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
                             <input type=hidden name="oid" value="00D40000000MrgW">
                             <input type=hidden name="retURL" value="http://perfectsearchdesign.com/thankyou.html">
+                            <input type=hidden id="lead_source" name="lead_source" value="TOPSEOs Traffic">
                                 <fieldset>
                                     <div class="control-group">
-                                        <label for="first_name">First Name</label><input id="first_name" maxlength="40" name="first_name" size="20" type="text" /><br>
-                                        <label for="last_name">Last Name</label><input id="last_name" maxlength="80" name="last_name" size="20" type="text" /><br>
-                                        <label for="company">Company</label><input id="company" maxlength="40" name="company" size="20" type="text" /><br>
-                                        <label for="email">Email</label><input id="email" maxlength="80" name="email" size="20" type="text" /><br>
-                                        <label for="phone">Phone</label><input id="phone" maxlength="40" name="phone" size="20" type="text" /><br>
-                                        <label>Budget</label><input id="00N40000002Hpxh" name="00N40000002Hpxh" size="20" type="text" /><br>
-                                        <label>Message</label><textarea id="00N40000002HsEB" name="00N40000002HsEB" rows="3" type="text" wrap="soft"></textarea><br>
-                                        <div class="control-group">
-                                            <div class="controls">
-                                                <button type="submit" class="btn btn-primary"><input type="hidden" name="submit">Submit</button>
-                                            </div>
+                                        <label for="first_name">First Name</label>
+                                            <input id="first_name" maxlength="40" name="first_name" size="20" type="text" /><br>
+                                        <label for="last_name">Last Name</label>
+                                            <input id="last_name" maxlength="80" name="last_name" size="20" type="text" /><br>
+                                        <label for="company">Company</label>
+                                            <input id="company" maxlength="40" name="company" size="20" type="text" /><br>
+                                        <label for="email">Email</label>
+                                            <input id="email" maxlength="80" name="email" size="20" type="text" /><br>
+                                        <label for="phone">Phone</label>
+                                            <input id="phone" maxlength="40" name="phone" size="20" type="text" /><br>
+                                        Traffic Services:<br>
+                                        <small id="gray">To select more than one service hold down the Ctrl key.</small><br>
+                                        <select id="00N40000002Hq0g" multiple="multiple" name="00N40000002Hq0g" title="Traffic
+                                        Services"><option value="Search Engine Marketing">Search Engine Marketing</option>
+                                        <option value="Search Engine Optimization">Search Engine Optimization</option>
+                                        <option value="Social Media">Social Media</option>
+                                        <option value="Mobile">Mobile</option>
+                                        <option value="Retargeting">Retargeting</option>
+                                        <option value="Display Advertising">Display Advertising</option>
+                                        <option value="Link Building">Link Building</option>
+                                        <option value="Reputation Management">Reputation Management</option>
+                                        </select><br>
+                                        <label for="description">Comments or Questions:</label>
+                                            <textarea id="description" name="description" rows="4"></textarea><br>
+
+                                        <div class="controls">
+                                            <button type="submit" class="btn btn-primary"><input type="hidden" name="submit">Submit</button>
                                         </div>
+                                    </div>
                                 </fieldset>
                         </form>
                     </div>
